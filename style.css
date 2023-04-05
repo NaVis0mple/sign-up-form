@@ -31,7 +31,7 @@ body {
     position: absolute;
     font-size: 15px;
     color: white;
-    bottom: x0px;
+    bottom: 0px;
     right: 5px;
 }
 .image-text a:visited {
