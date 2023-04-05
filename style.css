@@ -1,3 +1,55 @@
-.dog{
-    background-color: brown;
+body {
+    height: 100%;
+    overflow-y: hidden;
+    border: 0;
+    margin: 0;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.left{
+    width: 5vw;
+    background-color: black;
+}
+.maincontainer {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+}
+
+.imgcontainer {
+    position: relative;
+
+}
+
+
+.image-text {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    bottom: x0px;
+    right: 5px;
+}
+.image-text a:visited {
+    color: white;
+}
+
+.tree {
+    background-image: url('halie-west-25xggax4bSA-unsplash.jpg');
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    min-height: 100vh;
+    min-width: 640px;
+}
+
+.right {
+    width: 5vw;
+    background-color: black;
+}
+
