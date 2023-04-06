@@ -55,25 +55,54 @@ body {
 
 form {
     display: grid;
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr 2px 1fr 2fr);
     grid-template-columns: repeat(2,1fr);
+    column-gap: 50px;
+    /*bcz hard to change rows gap.so add 1row to manage it.*/
+    grid-template-areas:  
+    "firstName lastName"        
+    ". ."
+    "firstNameinput lastNameinput"
+    ". ."
+    "email phoneNumber"
+    ". ."
+    "emailinput phoneNumberinput"
+    ". ."
+    "password confirmPassword"
+    ". ."
+    "passwordinput confirmPasswordinput"
+    ". ."
+    ;
 }
-
-input[id="firstName"] {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
+input[id="firstName"]{
+    grid-area: firstNameinput;
 }
-
-label[for="lastName"] {
-    grid-row: 1 / 2 ;
-    grid-column: 2 / 3;
+input[id="lastName"]{
+    grid-area: lastNameinput;            
 }
-
-input[id="email"] {
-    grid-row: 4/5;
+input[id="email"]{
+    grid-area: emailinput;
 }
-
+input[id="phoneNumber"]{
+    grid-area: phoneNumberinput;
+}
 input[id="password"] {
-    grid-row: 6/7;
+    grid-area: passwordinput;
 }
-
+input[id="confirmPassword"]{
+    grid-area: confirmPasswordinput;
+}
+label[for="firstName"] {
+    grid-area: firstName;
+}
+label[for="lastName"] { 
+    grid-area: lastName;    
+}label[for="email"] {
+    grid-area: email;
+}label[for="phoneNumber"] {
+    grid-area: phoneNumber;
+}label[for="password"] {
+    grid-area: password;
+}label[for="confirmPassword"] {
+    grid-area: confirmPassword;
+}
