@@ -53,3 +53,27 @@ body {
     background-color: black;
 }
 
+form {
+    display: grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: repeat(2,1fr);
+}
+
+input[id="firstName"] {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+label[for="lastName"] {
+    grid-row: 1 / 2 ;
+    grid-column: 2 / 3;
+}
+
+input[id="email"] {
+    grid-row: 4/5;
+}
+
+input[id="password"] {
+    grid-row: 6/7;
+}
+
