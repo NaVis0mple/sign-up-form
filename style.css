@@ -1,8 +1,27 @@
+
 body {
     height: 100%;
     overflow-y: hidden;
     border: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border-radius: 5px; 
+    border-width: 1px; 
+    box-shadow: none;
+    outline-style: none;  
+    border-style:solid;    
+    padding: 5px;
+}
+
+input:hover {
+}
+
+input:focus {
+    border-color: rgb(42, 104, 165); 
+    border-width: 1px; 
 }
 
 .container {
@@ -12,13 +31,14 @@ body {
 
 }
 .left{
-    width: 5vw;
+    width: 30vw;
     background-color: black;
 }
 .maincontainer {
     display: flex;
     flex-direction: row;
     flex: 1 1 auto;
+    justify-content: space-between;
 }
 
 .imgcontainer {
@@ -49,8 +69,16 @@ body {
 }
 
 .right {
-    width: 5vw;
+    width: 30vw;
     background-color: black;
+}
+
+.formcontainer {
+    display: flex;
+    margin-right: 350px;
+    flex-flow: column;
+    justify-content: center;
+    margin-left: 100px;
 }
 
 form {
@@ -105,4 +133,16 @@ label[for="lastName"] {
     grid-area: password;
 }label[for="confirmPassword"] {
     grid-area: confirmPassword;
+}
+
+.top {
+    height: 200px;
+}
+
+.mid {
+
+}
+
+.bottom {
+    
 }
