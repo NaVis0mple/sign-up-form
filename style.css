@@ -5,6 +5,7 @@ body {
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 input {
@@ -162,13 +163,25 @@ label[for="lastName"] {
 }
 
 .top {
-    height: 200px;
+    height: 250px;
+    font-size: 20px;
 }
 
-.mid {
-
+button {
+    padding: 8px 25px;
+    border-radius: 8px;
+    outline-style: none;  
+    border-style:solid; 
+    border-color: darkolivegreen;
+    background-color: rgb(35, 117, 71) ;
+    color: white;  
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
 }
 
-.bottom {
-    
+.bottom a {
+    color: darkolivegreen;
+    text-decoration: none;
 }
