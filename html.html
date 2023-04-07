@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign-up-form</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -23,28 +23,29 @@
                         <form action="#" method="post" id="form"> 
                             
                                 <label for="firstName">FIRST NAME</label>
-                                <input type="text" name="firstName" id="firstName" required>
-                            
+                                <input type="text" name="firstName" id="firstName" autocomplete="off" class="" required>
+                                <span></span>
+
                                 <label for="lastName">LAST NAME</label>
-                                <input type="text" name="lastName" id="lastName" required>
-                            
+                                <input type="text" name="lastName" id="lastName" required autocomplete="off">
+                                <span></span>
                             
                            
                                 <label for="email">EMAIL</label>
-                                <input type="email" name="email" id="email" required>
-                           
+                                <input type="email" name="email" id="email" required autocomplete="off">
+                                <span></span>
+                                
                                 <label for="phoneNumber">PHONE NUMBER</label>
-                                <input type="tel" name="phoneNumber" id="phoneNumber" required pattern="\d{4}[\-]\d{3}[\-]\d{3}">
-                           
+                                <input type="tel" name="phoneNumber" id="phoneNumber" autocomplete="off" required pattern="\d{4}[\-]\d{3}[\-]\d{3}" placeholder="09XX-XXX-XXX">
+                                <span></span>
                             
-
-                           
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password" required>
+                                <input type="password" name="password" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" >
+                                <span></span>
                                 
                                 <label for="confirmPassword">CONFIRM PASSWORD</label>
                                 <input type="password" name="confirmPassword" id="confirmPassword" required>
-                            
+                                <span></span>
                         </form>
                         
                     </div>
@@ -56,5 +57,8 @@
             </div>
         <div class="right">2</div>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

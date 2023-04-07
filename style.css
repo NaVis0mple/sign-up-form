@@ -24,20 +24,31 @@ input:focus {
     border-width: 1px; 
 }
 
-input:focus:invalid {
+input.validate:invalid {
     border-color: red ;
     border-width: 1px;
 }
 
-input:user-invalid {
-    border-color: red;
-    border-width: 1px;
-}
-
-input:focus:valid {
+input:valid {
     border-color: green;
     border-width: 1px;
 }
+
+input[id='password'] + span {
+    position: relative;
+}
+
+input[id='password'] + span::before {
+    position: absolute;
+    content: '(UpperCase,LowerCase,Number/SpecialChar and min 8 Chars)';
+    top: 150px;
+    left: ;
+    font-size: 15px;
+}
+
+
+
+
 
 .container {
     display: flex;
