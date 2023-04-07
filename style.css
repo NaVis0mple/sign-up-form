@@ -24,6 +24,21 @@ input:focus {
     border-width: 1px; 
 }
 
+input:focus:invalid {
+    border-color: red ;
+    border-width: 1px;
+}
+
+input:user-invalid {
+    border-color: red;
+    border-width: 1px;
+}
+
+input:focus:valid {
+    border-color: green;
+    border-width: 1px;
+}
+
 .container {
     display: flex;
     flex-direction: row;
